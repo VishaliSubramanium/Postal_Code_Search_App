@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincode Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="search-section">
+            <label for="pincodeInput">Enter Pincode</label>
+            <input type="text" id="pincodeInput" maxlength="6" placeholder="Pincode">
+            <button id="lookupBtn">Lookup</button>
+            <p id="errorMsg" class="error-text hidden"></p>
+        </div>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="resultsSection" class="results-section hidden">
+            <div class="results-header">
+                <p id="pincodeDisplay">Pincode: </p>
+                <p id="messageDisplay">Message: </p>
+            </div>
+            <div class="filter-wrapper">
+                <input type="text" id="filterInput" placeholder="Filter">
+            </div>
+            <div id="postalGrid" class="postal-grid"></div>
+        </div>
+
+        <div id="noResultMsg" class="no-result hidden">
+            Couldn’t find the postal data you’re looking for…
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
